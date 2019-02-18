@@ -9,12 +9,12 @@
     function PaymentService($http) {
         var service = {};
 
-        service.GetAll = GetAll;
-        service.GetById = GetById;
-        service.GetByUsername = GetByUsername;
-        service.Create = Create;
-        service.Update = Update;
-        service.Delete = Delete;
+        //service.GetAll = GetAll;
+        //service.GetById = GetById;
+        //service.GetByUsername = GetByUsername;
+        //service.Create = Create;
+        //service.Update = Update;
+        //service.Delete = Delete;
 
         return service;
 
