@@ -6,17 +6,18 @@ require.config({
 require(
     [
         'app',
-        'app-services/authentication.service',
         'app-services/flash.service',
+		'app-services/user.service.local-storage',
         'app-services/user.service',
-        'app-services/product.service',
+        'app-services/authentication.service',
+		'app-services/product.service',
         'app-services/consultancy.service',
         'app-services/dashboard.service',
         'app-services/lemoras.service',
         'app-services/message.service',
         'app-services/payment.service',
         'app-services/settings.service',
-        'app-services/user.service.local-storage',
+        
         'module/login/login.controller',
         'module/register/register.controller',
         'module/logout/logout.controller'
