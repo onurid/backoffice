@@ -5,8 +5,8 @@
         .module('app')
         .controller('BillController', BillController);
 
-	BillController.$inject = ['UserService', '$rootScope'];
-    function BillController(UserService, $rootScope) {
+	BillController.$inject = ['UserLocalService', '$rootScope'];
+    function BillController(UserLocalService, $rootScope) {
         var vm = this;
 
         vm.user = null;
@@ -21,21 +21,21 @@
         }
 
         function loadCurrentUser() {
-            UserService.GetByUsername($rootScope.globals.currentUser.username)
+            UserLocalService.GetByUsername($rootScope.globals.currentUser.username)
                 .then(function (user) {
                     vm.user = user;
                 });
         }
 
         function loadAllUsers() {
-            UserService.GetAll()
+            UserLocalService.GetAll()
                 .then(function (users) {
                     vm.allUsers = users;
                 });
         }
 
         function deleteUser(id) {
-            UserService.Delete(id)
+            UserLocalService.Delete(id)
             .then(function () {
                 loadAllUsers();
             });

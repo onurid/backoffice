@@ -5,8 +5,8 @@
         .module('app')
         .controller('SearchController', SearchController);
 
-    SearchController.$inject = ['UserService', '$rootScope'];
-    function SearchController(UserService, $rootScope) {
+    SearchController.$inject = ['UserLocalService', '$rootScope'];
+    function SearchController(UserLocalService, $rootScope) {
         var vm = this;
 
     }

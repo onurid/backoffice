@@ -5,7 +5,7 @@
         .module('app')
         .controller('HomeController', HomeController);
 
-    HomeController.$inject = ['UserService', '$rootScope'];
+    HomeController.$inject = ['UserLocalService', '$rootScope'];
     function HomeController(UserService, $rootScope) {
         var vm = this;
 
@@ -21,21 +21,21 @@
         }
 
         function loadCurrentUser() {
-            UserService.GetByUsername($rootScope.globals.currentUser.username)
+            UserLocalService.GetByUsername($rootScope.globals.currentUser.username)
                 .then(function (user) {
                     vm.user = user;
                 });
         }
 
         function loadAllUsers() {
-            UserService.GetAll()
+            UserLocalService.GetAll()
                 .then(function (users) {
                     vm.allUsers = users;
                 });
         }
 
         function deleteUser(id) {
-            UserService.Delete(id)
+            UserLocalService.Delete(id)
             .then(function () {
                 loadAllUsers();
             });

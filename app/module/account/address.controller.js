@@ -5,8 +5,8 @@
         .module('app')
         .controller('AddressController', AddressController);
 
-	AddressController.$inject = ['UserService', '$rootScope'];
-    function AddressController(UserService, $rootScope) {
+	AddressController.$inject = ['UserLocalService', '$rootScope'];
+    function AddressController(UserLocalService, $rootScope) {
         var vm = this;
 
         vm.address = null;
@@ -21,21 +21,21 @@
         }
 
         function addAddress() {
-            UserService.GetByUsername($rootScope.globals.currentUser.username)
+            UserLocalService.GetByUsername($rootScope.globals.currentUser.username)
                 .then(function (user) {
                     vm.user = user;
                 });
         }
 
         function loadAllUsers() {
-            UserService.GetAll()
+            UserLocalService.GetAll()
                 .then(function (users) {
                     vm.allUsers = users;
                 });
         }
 
         function deleteAddress(id) {
-            UserService.Delete(id)
+            UserLocalService.Delete(id)
             .then(function () {
                 loadAllUsers();
             });
