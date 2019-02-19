@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('app_module.dashboardservice')
+        .module('app')
         .factory('DashboardService', DashboardService);
 
     DashboardService.$inject = ['$http'];

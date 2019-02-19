@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('app_module.paymentmethodcontroller')
+        .module('app')
         .controller('PaymentMethodController', PaymentMethodController);
 
     PaymentMethodController.$inject = ['PaymentService', '$rootScope'];

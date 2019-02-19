@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('app_module.calluscontroller')
+        .module('app')
         .controller('CallUsController', CallUsController);
 
     CallUsController.$inject = ['$rootScope'];

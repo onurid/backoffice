@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('app_module.dashboardcontroller')
+        .module('app')
         .controller('DashboardController', DashboardController);
 
     DashboardController.$inject = ['DashboardService', '$rootScope'];

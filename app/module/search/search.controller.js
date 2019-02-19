@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('app_module.searchcontroller')
+        .module('app')
         .controller('SearchController', SearchController);
 
     SearchController.$inject = ['UserService', '$rootScope'];

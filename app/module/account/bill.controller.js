@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('app_module.billcontroller')
+        .module('app')
         .controller('BillController', BillController);
 
 	BillController.$inject = ['UserService', '$rootScope'];

@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('app_module.organizemeetingcontroller')
+        .module('app')
         .controller('OrganizeMeetingController', OrganizeMeetingController);
 
     OrganizeMeetingController.$inject = ['ConsultancyService', '$rootScope'];

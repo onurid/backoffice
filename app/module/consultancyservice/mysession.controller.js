@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('app_module.mysessioncontroller')
+        .module('app')
         .controller('MySessionController', MySessionController);
 
     MySessionController.$inject = ['ConsultancyService', '$rootScope'];

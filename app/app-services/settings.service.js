@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('app_module.settingsservice')
+        .module('app')
         .factory('SettingsService', SettingsService);
 
     SettingsService.$inject = ['$http'];

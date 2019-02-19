@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('app_module.logoutcontroller')
+        .module('app')
         .controller('LogoutController', LogoutController);
 
     LogoutController.$inject = ['$scope'];

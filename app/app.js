@@ -1,4 +1,4 @@
-(function () {
+﻿(function () {
     'use strict';
 
 var $routeProviderReference;
@@ -8,7 +8,7 @@ var $ocLazyLoadProviderReference;
 var $configUrl =  "./app/data/config.json";
 
     var app = angular
-        .module('app', ['ngRoute', 'ngCookies', 'oc.lazyLoad', 'app_module'])
+        .module('app', ['ngRoute', 'ngCookies', 'oc.lazyLoad', 'app_module.app'])
         .factory('getjson', function($http) {
         
             var getData = function(url) {

@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('app_module.lemorasservice')
+        .module('app')
         .factory('LemorasService', LemorasService);
 
     LemorasService.$inject = ['$http'];
