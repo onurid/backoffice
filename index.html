@@ -16,9 +16,11 @@
   <!-- CSS Files -->
   <link href="assets/css/material-dashboard.css?v=2.1.1" rel="stylesheet" />
 
+   <script type="text/javascript" src="assets/js/loading.js"> </script>
 </head>
 
-<body class="" id="rootBody">
+<body class="" id="rootBody" onload="loadProgressBar();">
+<div id="pageContent" style="display: none" width="50" border="0" cellspacing="0" cellpadding="0">
   <div ng-if="config == undefined" ng-view></div>
   <div ng-if="config != undefined" class="wrapper ">
     <div class="sidebar" data-color="purple" data-background-color="white" data-image="assets/img/sidebar-1.jpg">
@@ -123,6 +125,7 @@
       </footer>
     </div>
   </div>
+</div>  
   <!--   Core JS Files   -->
   <script src="assets/js/core/jquery.min.js"></script>
   <script src="assets/js/core/popper.min.js"></script>
