@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('app')
+        .module('app_module.settingscontroller', [])
         .controller('SettingsController', SettingsController);
 
     SettingsController.$inject = ['SettingsService', '$rootScope'];

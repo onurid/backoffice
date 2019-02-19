@@ -8,7 +8,7 @@ var $ocLazyLoadProviderReference;
 var $configUrl =  "./app/data/config.json";
 
     var app = angular
-        .module('app', ['ngRoute', 'ngCookies', 'oc.lazyLoad'])
+        .module('app', ['ngRoute', 'ngCookies', 'oc.lazyLoad', 'app_module'])
         .factory('getjson', function($http) {
         
             var getData = function(url) {

@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('app')
+        .module('app_module.messageservice', [])
         .factory('MessageService', MessageService);
 
     MessageService.$inject = ['$http'];
