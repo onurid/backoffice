@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('app_module.consultancyservice', [])
+        .module('app_module.consultancyservice')
         .factory('ConsultancyService', ConsultancyService);
 
     ConsultancyService.$inject = ['$http'];

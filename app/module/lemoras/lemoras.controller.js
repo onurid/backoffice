@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('app_module.lemorascontroller', [])
+        .module('app_module.lemorascontroller')
         .controller('LemorasController', LemorasController);
 
     LemorasController.$inject = ['LemorasService', '$rootScope'];
