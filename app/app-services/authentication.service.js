@@ -9,9 +9,9 @@
     function AuthenticationService($http, $cookies, $rootScope, $timeout, UserService) {
         var service = {};
 
-        service.Login = Login;
-        service.SetCredentials = SetCredentials;
-        service.ClearCredentials = ClearCredentials;
+        //service.Login = Login;
+        //service.SetCredentials = SetCredentials;
+        //service.ClearCredentials = ClearCredentials;
 
         return service;
 
