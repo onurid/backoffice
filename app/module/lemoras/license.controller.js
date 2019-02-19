@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('app', [])
+        .module('app')
         .controller('LicenseController', LicenseController);
 
     LicenseController.$inject = ['LemorasService', '$rootScope'];

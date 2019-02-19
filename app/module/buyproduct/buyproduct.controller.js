@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('app', [])
+        .module('app')
         .controller('BuyProductController', BuyProductController);
 
     BuyProductController.$inject = ['ProductService', '$rootScope'];

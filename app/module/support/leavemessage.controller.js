@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('app', [])
+        .module('app')
         .controller('LeaveMessageController', LeaveMessageController);
 
     LeaveMessageController.$inject = ['MessageService', '$rootScope'];
